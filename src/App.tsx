@@ -5,7 +5,7 @@ import JsonDiffViewer from './JsonDiffViewer/JsonDiffViewer'
 function App() {
   return (
     <div className="App">
-      <JsonDiffViewer oldValue={JSON.stringify(Old, null, 2).repeat(200)} splitView newValue={JSON.stringify(New, null, 2).repeat(200)} leftTitle='Left' rightTitle='Right' />
+      <JsonDiffViewer showDiffOnly={true} oldValue={JSON.stringify(Old, null, 2).repeat(200)} newValue={JSON.stringify(New, null, 2).repeat(200)} leftTitle='Left' rightTitle='Right' />
     </div>
   );
 }
